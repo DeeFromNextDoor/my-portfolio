@@ -8,7 +8,6 @@
   text-align: left;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 20px;
   text-transform: uppercase;
 }
 
@@ -28,12 +27,10 @@
   padding: 15px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* position: relative; */
   height: fit-content;
 }
 
 .project .image_wrapper {
-  /* position: relative; */
   overflow: hidden;
   transition: transform 20s ease;
 }
@@ -47,6 +44,7 @@
   flex: 1;
   min-height: 100px;
   max-height: 300px;
+  margin-bottom: 10px;
   object-fit: cover;
   border-radius: 15px;
   overflow: hidden;
@@ -55,7 +53,6 @@
 
 .project_texts {
   flex: 1;
-  /* width: 40%; */
   padding: 15px;
   text-align: center;
 }
@@ -133,10 +130,8 @@
   }
 
   .project {
-    padding: 0;
-    padding-top: 10px;
+    padding: 10px 0;
     width: 90%;
-    max-height: 40rem;
     margin: auto;
     align-self: center;
   }
