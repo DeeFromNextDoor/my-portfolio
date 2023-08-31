@@ -1,0 +1,149 @@
+.navbar {
+  position: fixed;
+  font-weight: 700;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: inherit;
+  background-color: inherit;
+  padding: 20px 50px 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9;
+}
+
+.hide {
+  transform: translateY(-100%);
+}
+
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: inherit;
+  position: relative;
+}
+
+.nav_logo {
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  transition: all 0.23s ease-in-out;
+}
+
+.nav a:hover {
+  cursor: pointer;
+  color: var(--Light_blue_text);
+}
+
+.theme_mode {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.theme_mode i {
+  margin-right: 8px;
+  font-size: 0.8rem;
+}
+
+.dark_mode .theme_mode {
+  color: var(--Very_Dark_Blue_Light_Mode_Text);
+  background-color: var(--Very_Light_Gray_Light_Mode_Background);
+}
+
+.light_mode .theme_mode {
+  color: var(--White_Dark_Mode_Text_nd_Light_Mode_Elements);
+  background-color: var(--Dark_Blue);
+}
+
+.dark_mode .navlinks {
+  background-color: var(--Dark_Blue);
+  color: var(--White_Dark_Mode_Text_nd_Light_Mode_Elements);
+  transition: all 0.5s ease-in-out;
+}
+
+.light_mode .navlinks {
+  background-color: var(--Very_Light_Gray_Light_Mode_Background);
+  color: var(--Very_Dark_Blue_Light_Mode_Text);
+  transition: all 0.5s ease-in-out;
+}
+
+.bi-menu-up,
+.bi-menu-down {
+  font-size: 0;
+}
+
+.navlinks {
+  background: inherit;
+}
+
+.navlinks.slide-in {
+  transform: translateX(0);
+}
+
+@media (max-width: 800px) {
+  .bi-menu-up,
+  .bi-menu-down {
+    font-size: 23px;
+    display: inline-block;
+    visibility: visible;
+    z-index: 999;
+  }
+
+  .navlinks {
+    position: absolute;
+    top: 170%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 900;
+  }
+
+  .navlinks.slide-in {
+    transform: scaleY(1);
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    display: none;
+  }
+
+  .navlinks.slide-in ~ .overlay {
+    display: block;
+    z-index: 5;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,149 @@
+.contact {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.contact_title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.contact_title h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--Light_blue_text);
+}
+
+.contact_title h4 {
+  font-size: 1rem;
+}
+.contact_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact_form {
+  flex: 1;
+  padding: 20px;
+  background-color: white;
+  color: var(--Very_Dark_Blue_Light_Mode_Text);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form_group {
+  margin-bottom: 20px;
+}
+
+.form_group label {
+  display: block;
+  font-weight: 600;
+}
+
+.form_group input,
+.form_group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+  color: #999;
+}
+
+.form_group input:focus,
+.form_group textarea:focus {
+  border-color: var(--Light_blue_text);
+}
+
+.button {
+  background-color: var(--Light_blue_text);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: var(--Light_blue_text);
+}
+
+.contact_info {
+  flex: 0.8;
+  padding: 20px;
+  font-weight: 600;
+  background-color: white;
+  color: var(--Very_Dark_Blue_Light_Mode_Text);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.info_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info_icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: var(--Light_blue_text);
+}
+
+.social_links a {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: var(--Light_blue_text);
+  transition: color 0.3s;
+}
+
+.social_links a:hover {
+  color: #5a54a3;
+}
+
+.form_group input,
+.form_group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.form_group input::placeholder,
+.form_group textarea::placeholder {
+  color: #999;
+}
+
+.form_group input:focus,
+.form_group input:valid,
+.form_group textarea:focus,
+.form_group textarea:valid {
+  border-color: var(--Light_blue_text);
+  transform: scale(1.02);
+}
+
+@media (max-width: 800px) {
+  .contact_content {
+    flex-direction: column;
+  }
+
+  .contact_form,
+  .contact_info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
