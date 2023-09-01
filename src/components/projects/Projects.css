@@ -122,11 +122,12 @@
     padding: 0;
     margin: auto;
     text-align: center;
-    width: 100%;
+    width: 90%;
   }
 
-  .projects-content .title {
-    text-align: center;
+  .projects-content .title,
+  .projects-content h4 {
+    text-align: left;
   }
 
   .project {

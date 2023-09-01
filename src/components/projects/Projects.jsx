@@ -8,7 +8,7 @@ const Projects = () => {
     <section className="projects" id="projects">
       <div className="container">
         <div className="projects-content">
-          <h3 className="title">portfolio</h3>
+          <h3 className="title">Projects</h3>
           <h4>Each project is a unique piece of development</h4>
           <div className="projects_grid">
             {ProjectsData.map((proj) => (

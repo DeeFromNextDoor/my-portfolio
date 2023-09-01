@@ -33,14 +33,19 @@ const Home = () => {
       <div className="container">
         <div className="hero_main">
           <div className="hero_text">
-            <h1>
-              Front-End Developer <FontAwesomeIcon icon={faReact} />
-            </h1>
-            <p>
-              Hi there! 👋 I'm Simeon Victor, a Front-End Enthusiast and React
-              Developer based in Lagos, Nigeria
-              <FaMapMarkerAlt className="info_icon" />.
-            </p>
+            <h2>
+              Hi there! 👋, my name is Simeon Victor a Front-End Enthusiast and
+              React Developer
+              <FontAwesomeIcon
+                icon={faReact}
+                className="rotating-logo"
+                style={{
+                  marginLeft: "10px",
+                  color: "#61DAFB",
+                  fontSize: "28px",
+                }}
+              />
+            </h2>
             <span>
               <a href="#" download="resume.pdf" className="download_cv">
                 <i

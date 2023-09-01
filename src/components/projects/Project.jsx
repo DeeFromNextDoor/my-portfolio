@@ -19,17 +19,18 @@ const Project = ({
   };
   return (
     <div className={`project ${hovered ? "hovered" : ""}`}>
-      <div className="project_image">
-        <div
-          className={`image_wrapper ${hovered ? "scrolling_image" : ""}`}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img src={image} alt="" />
-        </div>
-      </div>
+      <h3>{title}</h3>
+
       <div className="project_texts">
-        <h3>{title}</h3>
+        <div className="project_image">
+          <div
+            className={`image_wrapper ${hovered ? "scrolling_image" : ""}`}
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
+          >
+            <img src={image} alt="" />
+          </div>
+        </div>
         <p>{description}</p>
         <div className="skills">
           {technologies.map((technology, index) => (
