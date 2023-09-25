@@ -21,22 +21,42 @@ const Navbar = () => {
           <div className={`navlinks ${menuVisible ? "slide-in" : ""}`}>
             <ul className="nav_links">
               <li>
-                <Link to="home" smooth={true} duration={500}>
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleMenuToggle}
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="about" smooth={true} duration={500}>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleMenuToggle}
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link to="projects" smooth={true} duration={500}>
+                <Link
+                  to="projects"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleMenuToggle}
+                >
                   Projects
                 </Link>
               </li>
               <li>
-                <Link to="contact" smooth={true} duration={500}>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={500}
+                  onClick={handleMenuToggle}
+                >
                   Contact
                 </Link>
               </li>
