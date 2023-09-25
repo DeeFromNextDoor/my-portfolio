@@ -7,19 +7,19 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 const skillsData = [
   {
     name: "HTML",
-    icon: "https://stefantopalovicdev.vercel.app/static/media/html.6e7b1b463015c056aeb9a624c8dc2876.svg",
+    icon: "https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/51703b85-ef3f-4d45-fae0-c39d4c733900/preview",
   },
   {
     name: "CSS",
-    icon: "https://stefantopalovicdev.vercel.app/static/media/css3.9cecabbf6ce67609c48bc4f280a11002.svg",
+    icon: "https://icon-library.com/images/css-icon/css-icon-1.jpg",
   },
   {
     name: "JavaScript",
-    icon: "https://stefantopalovicdev.vercel.app/static/media/javascript.de4c2594613e34b15666206bbede7327.svg",
+    icon: "https://static.vecteezy.com/system/resources/thumbnails/012/697/298/small_2x/3d-javascript-logo-design-free-png.png",
   },
   {
     name: "React",
-    icon: "https://stefantopalovicdev.vercel.app/static/media/react.afac9c43724070bf6674f2692b7356a9.svg",
+    icon: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png",
   },
   {
     name: "Figma",
