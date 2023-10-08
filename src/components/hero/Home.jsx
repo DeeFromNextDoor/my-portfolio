@@ -47,7 +47,11 @@ const Home = () => {
               />
             </h2>
             <span>
-              <a href="#" download="resume.pdf" className="download_cv">
+              <a
+                href="/victor-resume.pdf"
+                download="victor-resume.pdf"
+                className="download_cv"
+              >
                 <i
                   className="bi bi-download"
                   style={{ marginRight: "6px" }}
