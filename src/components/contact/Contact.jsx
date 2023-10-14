@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Contact.css";
 import { FaEnvelope, FaHandPointDown, FaMapMarkerAlt } from "react-icons/fa";
+import { useFormContext } from "../../context/FormContext";
+import { ToastContainer } from "react-toastify";
 
 const Contact = () => {
+  const { form, sendEmail, buttonText } = useFormContext();
+
   return (
     <section className="contact" id="contact">
       <div className="container">
@@ -15,40 +19,28 @@ const Contact = () => {
         <div className="contact_content">
           <div className="contact_form">
             <h4>Send me a Message</h4>
-            <form>
+            <form ref={form} onSubmit={sendEmail}>
               <div className="form_group">
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Your Name"
-                  required
-                />
+                <label>Name</label>
+                <input type="text" name="user_name" placeholder="Your Name" />
               </div>
+
               <div className="form_group">
-                <label htmlFor="email">Email</label>
+                <label>Email</label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
+                  name="user_email"
                   placeholder="Your Email"
-                  required
                 />
               </div>
               <div className="form_group">
-                <label htmlFor="message">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  placeholder="Your Message"
-                  required
-                ></textarea>
+                <label>Message</label>
+                <textarea name="message" placeholder="Your Message" />
               </div>
-              <button className="button" type="submit">
-                Send Message
-              </button>
+
+              <input type="submit" value={buttonText} className="button" />
             </form>
+            <ToastContainer />
           </div>
           <div className="contact_info">
             <div className="info_item">
@@ -60,13 +52,25 @@ const Contact = () => {
               <p>Location: Lagos, Nigeria</p>
             </div>
             <div className="social_links">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://twitter.com/simeonvictorda1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="bi bi-twitter"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="www.linkedin.com/in/simeon-victor-b72942288"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="bi bi-linkedin"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://instagram.com/deewhy01?igshid=MjEwN2IyYWYwYw=="
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <i className="bi bi-instagram"></i>
               </a>
             </div>
