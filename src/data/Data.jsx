@@ -14,16 +14,16 @@ export const ProjectsData = [
       "Explore a Wide Range of Products: Dive into a virtual shopping experience with this E-commerce App. Browse and purchase products, and enjoy secure authentication using Firebase. Stay tuned for seamless payments with Stripe integration and enhanced search functionality.",
     image: "./e-commerce.png",
     technologies: ["React", "Firebase", "Stripe", "HTML", "CSS"],
-    liveDemo: "https://ecommerce-web-app-with-api.netlify.app/",
+    liveDemo: "https://e-commerce-app-ybrp.vercel.app/",
     sourceCode: "https://github.com/DeeFromNextDoor/Add-To-Cart.git",
   },
-  {
-    title: "World Flags",
-    description:
-      "Discover the World Through Flags: A personal project showcasing country details and flags, complete with search and filtering capabilities.",
-    image: "./worldFlags.png",
-    technologies: ["React", "HTML", "CSS"],
-    liveDemo: "https://my-world-flags.netlify.app/",
-    sourceCode: "https://github.com/DeeFromNextDoor/world-flags.git",
-  },
+  // {
+  //   title: "World Flags",
+  //   description:
+  //     "Discover the World Through Flags: A personal project showcasing country details and flags, complete with search and filtering capabilities.",
+  //   image: "./worldFlags.png",
+  //   technologies: ["React", "HTML", "CSS"],
+  //   liveDemo: "https://my-world-flags.netlify.app/",
+  //   sourceCode: "https://github.com/DeeFromNextDoor/world-flags.git",
+  // },
 ];
