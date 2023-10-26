@@ -17,13 +17,13 @@ export const ProjectsData = [
     liveDemo: "https://e-commerce-app-ybrp.vercel.app/",
     sourceCode: "https://github.com/DeeFromNextDoor/Add-To-Cart.git",
   },
-  // {
-  //   title: "World Flags",
-  //   description:
-  //     "Discover the World Through Flags: A personal project showcasing country details and flags, complete with search and filtering capabilities.",
-  //   image: "./worldFlags.png",
-  //   technologies: ["React", "HTML", "CSS"],
-  //   liveDemo: "https://my-world-flags.netlify.app/",
-  //   sourceCode: "https://github.com/DeeFromNextDoor/world-flags.git",
-  // },
+  {
+    title: "World Flags",
+    description:
+      "Discover the World Through Flags: A personal project showcasing country details and flags, complete with search and filtering capabilities.",
+    image: "./worldFlags.png",
+    technologies: ["React", "HTML", "CSS"],
+    liveDemo: "https://my-world-flags.netlify.app/",
+    sourceCode: "https://github.com/DeeFromNextDoor/world-flags.git",
+  },
 ];
